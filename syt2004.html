@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="kjlee.css">
+<style>
+	p, svg, rect, dd {
+			margin: 0px;
+			padding: 0px;
+	}
+	a, a:hover{
+		text-decoration: none;
+		color: #ffffff;
+	}
+</style>
+</head>
+<body>
+
+<!--First-->
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1><span class="glyphicon glyphicon-education"></span><strong>  송태영 학생</strong></h1>
+	<div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" class="ui-btn-active ui-state-persist" data-transition="slide" data-direction="reverse"><span class="glyphicon glyphicon-book"></span>  진도 보고</a></li>
+        <li><a href="#pagetwo" data-transition="slide"><span class="glyphicon glyphicon-calendar"></span>  일별 보고</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <!-- total -->
+	<center><span class="glyphicon glyphicon-align-left"></span><strong> 전체 진도</strong></center>
+	<div class="well">
+		<center><div class="total" data-percent="10"></div></center>
+	</div>
+	
+	<hr />
+	
+	<!-- section -->
+	<center><span class="glyphicon glyphicon-align-left"></span><strong> 단원별 진도</strong></center>
+	<dl class="well">
+		<dt>1. 자연수의 성질</dt>
+		<center>
+		<dd>  - C <svg id="math_1_c"></svg></dd>
+		<dd>  - B <svg id="math_1_b"></svg></dd>
+		<dd>  - A <svg id="math_1_a"></svg></dd>
+		</center>
+		
+		<br />
+		<dt>2. 정수와 유리수</dt>
+		<center>
+		<dd>  - C <svg id="math_2_c"></svg></dd>
+		<dd>  - B <svg id="math_2_b"></svg></dd>
+		<dd>  - A <svg id="math_2_a"></svg></dd>
+		</center>
+		
+		<br />
+		<dt>3. 문자와 식</dt>
+		<center>
+		<dd>  - C <svg id="math_3_c"></svg></dd>
+		<dd>  - B <svg id="math_3_b"></svg></dd>
+		<dd>  - A <svg id="math_3_a"></svg></dd>
+		</center>
+		
+		<br />
+		<dt>4. 방정식</dt>
+		<center>
+		<dd>  - C <svg id="math_4_c"></svg></dd>
+		<dd>  - B <svg id="math_4_b"></svg></dd>
+		<dd>  - A <svg id="math_4_a"></svg></dd>
+		</center>
+		
+		<br />
+		<dt>5. 함수</dt>
+		<center>
+		<dd>  - C <svg id="math_5_c"></svg></dd>
+		<dd>  - B <svg id="math_5_b"></svg></dd>
+		<dd>  - A <svg id="math_5_a"></svg></dd>
+		
+	</dl>
+  </div>
+
+  <div data-role="footer">
+    <h1><span class="glyphicon glyphicon-user"></span><strong>  이경준 T</strong></h1>
+  </div>
+</div>
+
+<!--Second-->
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1><span class="glyphicon glyphicon-education"></span><strong>  송태영 학생</strong></h1>
+	<div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-transition="slide" data-direction="reverse"><span class="glyphicon glyphicon-book"></span>  진도 보고</a></li>
+        <li><a href="#pagetwo" class="ui-btn-active ui-state-persist" data-transition="slide"><span class="glyphicon glyphicon-calendar"></span>  일별 보고</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+
+  <div data-role="main" class="ui-content">
+
+	  <!-- 2017.03.15 -->
+	  <div class="panel-group">
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+			<h5 class="panel-title">
+			  <a data-toggle="collapse" href="#L20170315">1번째 수업 (2017.03.15. 수)</a>
+			</h5>
+		  </div>
+		  <div id="L20170315" class="panel-collapse collapse in">
+			<ul class="list-group">
+			  <li class="list-group-item">에이급 수학 1단원 <code>자연수의 성질</code> 단원을 학습하였습니다. 해당 단원은 에이급 수학의 문제를 풀었던 흔적도 없었고, 이해도가 매우 높았던 방정식 단원에 비하여 이해도가 떨어지는 모습을 보였습니다. 중학교 1학년 1학기 첫 단원이고, <code>계산 실수</code>가 많이 발생하는 단원입니다. 다른 단원에 비해 시간이 조금 걸리더라도 꼼꼼하게 학습한 후 다음 단원으로 넘어갈 수 있도록 하겠습니다.</li>
+			  <li class="list-group-item">태영 학생에게 <code>화학1 하이탑</code> 내용을 질문했는데, 배운 단원. 과학고나 특목고를 목표로 하고 계신다면 조금 쉬운 이론서로 한번 개념을 다진 후, 하이탑으로 학습하는 것이 개인적으로 좋으리라 생각됩니다.</li>
+			  <li class="list-group-item">창의력 수학 동아리 대비 지도를 포함하여 3번의 태영 학생과 수업을 하였습니다. 그 동안 제가 지도한 학생들과 비교해볼 때 태영 학생의 두뇌는 아주 명석한 것으로 생각됩니다. 앞으로도 열심히 지도하여 태영 학생의 학업에 도움이 될 수 있도록 하겠습니다.</li>
+			  <li class="list-group-item">수업 일지는 매 수업 후 업데이트 됩니다. 궁금한 사항이 있으시면 언제든지 연락주세요 :)</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+  
+  </div><!--end main ui-content -->
+
+  <div data-role="footer">
+    <h1><span class="glyphicon glyphicon-user"></span><strong>  이경준 T</strong></h1>
+  </div>
+</div>
+
+</body>
+<!--jquery.circlechart.js-->
+<script type="text/javascript">
+(function($){
+ 	$.fn.extend({  		
+	    //pass the options variable to the function
+		percentcircle: function(options) {
+		//Set the default values, use comma to separate the settings, example:
+			var defaults = {
+			        animate : true,
+					diameter : 100,
+					guage: 2,
+					coverBg: '#fff',
+					bgColor: '#efefef',
+					fillColor: '#5c93c8',
+					percentSize: '15px',
+					percentWeight: 'normal'
+				},
+				styles = {
+				    cirContainer : {
+					    'width':defaults.diameter,
+						'height':defaults.diameter
+					},
+					cir : {
+					    'position': 'relative',
+					    'text-align': 'center',
+					    'width': defaults.diameter,
+					    'height': defaults.diameter,
+					    'border-radius': '100%',
+					    'background-color': defaults.bgColor,
+					    'background-image' : 'linear-gradient(91deg, transparent 50%, '+defaults.bgColor+' 50%), linear-gradient(90deg, '+defaults.bgColor+' 50%, transparent 50%)'
+					},
+					cirCover: {
+						'position': 'relative',
+					    'top': defaults.guage,
+					    'left': defaults.guage,
+					    'text-align': 'center',
+					    'width': defaults.diameter - (defaults.guage * 2),
+					    'height': defaults.diameter - (defaults.guage * 2),
+					    'border-radius': '100%',
+					    'background-color': defaults.coverBg
+					},
+					percent: {
+						'display':'block',
+						'width': defaults.diameter,
+					    'height': defaults.diameter,
+					    'line-height': defaults.diameter + 'px',
+					    'vertical-align': 'middle',
+					    'font-size': defaults.percentSize,
+					    'font-weight': defaults.percentWeight,
+					    'color': defaults.fillColor
+                    }
+				};
+			
+			var that = this,
+					template = '<div><div class="ab"><div class="cir"><span class="perc">{{percentage}}</span></div></div></div>',					
+					options =  $.extend(defaults, options)					
+
+			function init(){
+				that.each(function(){
+					var $this = $(this),
+					    //we need to check for a percent otherwise set to 0;
+						perc = Math.round($this.data('percent')), //get the percentage from the element
+						deg = perc * 3.6,
+						stop = options.animate ? 0 : deg,
+						$chart = $(template.replace('{{percentage}}',perc+'%'));
+						//set all of the css properties forthe chart
+						$chart.css(styles.cirContainer).find('.ab').css(styles.cir).find('.cir').css(styles.cirCover).find('.perc').css(styles.percent);
+					
+					$this.append($chart); //add the chart back to the target element
+					setTimeout(function(){
+						animateChart(deg,parseInt(stop),$chart.find('.ab')); //both values set to the same value to keep the function from looping and animating	
+					},250)
+	   	    	});
+			}
+
+			var animateChart = function (stop,curr,$elm){
+				var deg = curr;
+				if(curr <= stop){
+					if (deg>=180){
+						$elm.css('background-image','linear-gradient(' + (90+deg) + 'deg, transparent 50%, '+options.fillColor+' 50%),linear-gradient(90deg, '+options.fillColor+' 50%, transparent 50%)');
+			  	    }else{
+			  		    $elm.css('background-image','linear-gradient(' + (deg-90) + 'deg, transparent 50%, '+options.bgColor+' 50%),linear-gradient(90deg, '+options.fillColor+' 50%, transparent 50%)');
+			  	    }
+					curr ++;
+					setTimeout(function(){
+						animateChart(stop,curr,$elm);
+					},1);
+				}
+			};			
+			
+			init(); //kick off the goodness
+   	    }
+	});
+	
+})(jQuery);
+</script>
+<!--jquery.progress.js-->
+<script type="text/javascript">
+/* jQuery Progress Bar Plugin - v1.0.0
+ * Copyright (c) 2015 Zeyu Feng; Licensed MIT
+ * https://github.com/clarkfbar/jquery.progress
+ * */
+
+$.fn.extend({
+  Progress: function(options){
+    var settings = {
+      width: 160, // 进度条宽度
+      height: 14, // 进度条高度
+      percent: 0, // 当前占比
+      backgroundColor: '#555', // 进度条背景颜色
+      barColor: '#d9534f', // 进度条颜色
+      fontColor: '#fff', // 百分比字体颜色
+      radius: 4, // 边角圆度
+      fontSize: 12, // 字体大小
+      increaseTime: 1000.00/60.00, // 每一次调整进度条的时间, 默认最佳时间(可以调大，不要调小)；只有在animate为true的情况下有效
+      increaseSpeed: 5, // 每次调整，增长速度；只有在animate为true的情况下有效
+      animate: true // 调整的时候，是否使用动画增长，默认为true
+    };
+    $.extend(settings, options);
+
+    var $svg = $(this), $background, $bar, $g, $text, timeout;
+
+    function progressPercent(p){
+      if(!$.isNumeric(p) || p < 0) {
+        return 0;
+      } else if(p > 100) {
+        return 100;
+      } else {
+        return p;
+      }
+    }        
+
+    // 动画相关方法
+    var Animate = {
+      getWidth: function(){
+        // 获取当前的宽度，根据总宽度和percent
+        return settings.width * settings.percent / 100.00;
+      },
+      getPercent: function(currentWidth){
+        // 根据当前的宽度，计算当前的percent
+        return parseInt((100 * currentWidth / settings.width).toFixed(2));
+      },
+      animateWidth: function(currentWidth, targetWidth){
+        // 动画增长
+        timeout = setTimeout(function(){
+          if(currentWidth > targetWidth) {
+            if(currentWidth - settings.increaseSpeed <= targetWidth) {
+              currentWidth = targetWidth;
+            } else {
+              currentWidth = currentWidth - settings.increaseSpeed;
+            }
+          } else if(currentWidth < targetWidth) {
+            if(currentWidth + settings.increaseSpeed >= targetWidth) {
+              currentWidth = targetWidth;
+            } else {
+              currentWidth = currentWidth + settings.increaseSpeed;
+            }
+          }
+
+          $bar.attr("width", currentWidth);
+          $text.empty().append(Animate.getPercent(currentWidth) + "%");
+
+          if(currentWidth != targetWidth) {
+            Animate.animateWidth(currentWidth, targetWidth);
+          }
+        }, settings.increaseTime); 
+      }
+    }
+
+    function svg(tag){
+      return document.createElementNS("http://www.w3.org/2000/svg", tag);
+    }
+
+    // 初始化条件
+    !!function(){
+      settings.percent = progressPercent(settings.percent);
+
+      $svg.attr({'width': settings.width, 'height': settings.height});
+
+      $background = $(svg("rect")).appendTo($svg)
+                      .attr({x: 0, rx: settings.radius, width: settings.width, height: settings.height, fill: settings.backgroundColor});
+
+      $bar = $(svg("rect")).appendTo($svg)
+                .attr({x: 0, rx: settings.radius, height: settings.height, fill: settings.barColor});
+
+      $g = $(svg("g")).appendTo($svg)
+                .attr({"fill": "#fff", "text-anchor": "middle", "font-family": "DejaVu Sans,Verdana,Geneva,sans-serif", "font-size": settings.fontSize});
+
+      $text = $(svg("text")).appendTo($g)
+                .attr({"x": settings.width/2.0, "y": settings.height/2.0 + settings.fontSize/3.0, fill: settings.fontColor});
+
+      draw();
+    }();
+
+    // 绘制进度条
+    function draw() {
+      var targetWidth = Animate.getWidth();
+
+      // 是否使用动画增长
+      if(settings.animate) {
+        if(timeout) {
+          clearTimeout(timeout);
+        }
+        var currentWidth = parseFloat($bar.attr("width"));
+        if(!currentWidth) currentWidth = 0;
+
+        Animate.animateWidth(currentWidth, targetWidth);
+      } else {
+        $bar.attr("width", targetWidth);
+        $text.empty().append(settings.percent + "%");
+      }
+    }
+
+    this.percent = function (p) {
+      if(p) {
+        p = progressPercent(p);
+
+        settings.percent = p;
+        draw();
+      }
+      return settings.percent;
+    }
+
+    return this;
+  }
+});
+
+</script>
+<!--score-->
+<script type="text/javascript">
+		$('.total').percentcircle({
+
+			animate : true,
+			diameter : 100,
+			guage: 2,
+			coverBg: '#fff',
+			bgColor: '#efefef',
+			fillColor: '#5c93c8',
+			percentSize: '20px',
+			percentWeight: 'normal'
+
+			});
+
+      var progress = $("#math_1_c").Progress({
+        percent: 100,
+      });
+
+      var progress1 = $("#math_1_b").Progress({
+        percent: 50,
+		barColor:'#46CFB0',
+      });
+
+      var progress2 = $("#math_1_a").Progress({
+        percent: 0,
+		barColor:'#5E9DE6',
+      });
+	  
+	  var progress = $("#math_2_c").Progress({
+        percent: 0,
+      });
+
+      var progress1 = $("#math_2_b").Progress({
+        percent: 0,
+		barColor:'#46CFB0',
+      });
+
+      var progress2 = $("#math_2_a").Progress({
+        percent: 0,
+		barColor:'#5E9DE6',
+      });
+	  
+	  	  var progress = $("#math_3_c").Progress({
+        percent: 0,
+      });
+
+      var progress1 = $("#math_3_b").Progress({
+        percent: 0,
+		barColor:'#46CFB0',
+      });
+
+      var progress2 = $("#math_3_a").Progress({
+        percent: 0,
+		barColor:'#5E9DE6',
+      });
+	  
+	  var progress = $("#math_4_c").Progress({
+        percent: 0,
+      });
+
+      var progress1 = $("#math_4_b").Progress({
+        percent: 0,
+		barColor:'#46CFB0',
+      });
+
+      var progress2 = $("#math_4_a").Progress({
+        percent: 0,
+		barColor:'#5E9DE6',
+      });
+	  
+	  var progress = $("#math_5_c").Progress({
+        percent: 0,
+      });
+
+      var progress1 = $("#math_5_b").Progress({
+        percent: 0,
+		barColor:'#46CFB0',
+      });
+
+      var progress2 = $("#math_5_a").Progress({
+        percent: 0,
+		barColor:'#5E9DE6',
+      });
+</script>
+</html>
+<!--http://canvasjs.com/html5-javascript-pie-chart/-->
