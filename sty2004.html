@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
 
 <style>
 	p, svg, rect, dd {
@@ -276,7 +275,9 @@
 				
 				<hr />
 				<center><span class="glyphicon glyphicon-time"></span><strong>공부 시간 목표 달성치</strong></center>
-				<center><div class="well"><svg id="fillgauge5" width="200" height="200" ></svg></div></center>
+				<div class="well">
+					<center><div class="B2_total_study_time" data-percent="0"></div></center>
+				</div>
 
 </center>
 				
@@ -654,8 +655,6 @@ $.fn.extend({
 });
 
 </script>
-<!--B2-total study time-->
-<script type="text/javascript">
 /*!
  * @license Open source under BSD 2-clause (http://choosealicense.com/licenses/bsd-2-clause/)
  * Copyright (c) 2015, Curtis Bratton
